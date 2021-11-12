@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.cts.ezcartapp.views.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_nav_home_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_view_cart"
+        android:name="com.cts.ezcartapp.views.ui.cart.ViewCartFragment"
+        android:label="@string/menu_view_cart"
+        tools:layout="@layout/fragment_view_cart" />
+
+    <fragment
+        android:id="@+id/nav_your_order"
+        android:name="com.cts.ezcartapp.views.ui.orders.YourOrdersFragment"
+        android:label="@string/menu_your_order"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.cts.ezcartapp.views.ui.feedback.FeedbackFragment"
+        android:label="@string/menu_feedback"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.cts.ezcartapp.views.ui.help.HelpFragment"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.cts.ezcartapp.views.ui.home.ProductDetailFragment"
+        android:label="Product Details"
+        tools:layout="@layout/product_detail_fragment">
+
+    </fragment>
+
+
+</navigation>
